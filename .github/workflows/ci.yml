@@ -9,10 +9,8 @@ on:
 jobs:
   build-and-test:
     name: Build & Test
-    # macOS 15 ships with Xcode 16 (iOS 18 simulators).
-    # If the project deployment target is raised above iOS 18, change this
-    # to macos-16 (or macos-latest) once that runner is available on GitHub.
-    runs-on: macos-15
+    # Needs a runner with iOS 26 simulators (deployment target is 26.1).
+    runs-on: macos-latest
 
     steps:
       - name: Checkout
@@ -35,7 +33,7 @@ jobs:
           xcodebuild build-for-testing \
             -project ItunesSearchApp.xcodeproj \
             -scheme ItunesSearchApp \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest' \
             -derivedDataPath DerivedData \
             | xcpretty
 
@@ -45,7 +43,7 @@ jobs:
           xcodebuild test-without-building \
             -project ItunesSearchApp.xcodeproj \
             -scheme ItunesSearchApp \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest' \
             -derivedDataPath DerivedData \
             -resultBundlePath TestResults.xcresult \
             | xcpretty --report junit --output test-report.xml
