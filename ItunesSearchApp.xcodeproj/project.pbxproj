@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0869DD038D34A7E745BA600B /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C7B49EB2A5A9D0B8DAFAA0 /* TestHelpers.swift */; };
 		ADAD3EC9DEA8EC870ABA0AF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7887408101259146CD209BB7 /* Foundation.framework */; };
 		EF1FAD69F3B006CC4E044167 /* AlbumListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DF16E7DD5458C74BFB249 /* AlbumListViewModelTests.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		6ADC9E702EEB1CF60070E3E6 /* ItunesSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7887408101259146CD209BB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A7C7B49EB2A5A9D0B8DAFAA0 /* TestHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		ADED95AE231BD14FC9DE80CA /* ItunesSearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesSearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2DF16E7DD5458C74BFB249 /* AlbumListViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				BA2DF16E7DD5458C74BFB249 /* AlbumListViewModelTests.swift */,
+				A7C7B49EB2A5A9D0B8DAFAA0 /* TestHelpers.swift */,
 			);
 			name = ItunesSearchAppTests;
 			path = ItunesSearchAppTests;
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1FAD69F3B006CC4E044167 /* AlbumListViewModelTests.swift in Sources */,
+				0869DD038D34A7E745BA600B /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

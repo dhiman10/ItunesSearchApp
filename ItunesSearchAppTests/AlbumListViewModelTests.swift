@@ -7,26 +7,6 @@ import Testing
 import Foundation
 @testable import ItunesSearchApp
 
-// MARK: - Sequential mock for pagination tests
-
-actor SequentialMockAPIService: APIServiceProtocal {
-    private let responses: [Data]
-    private var callIndex = 0
-
-    init(responses: [Data]) {
-        self.responses = responses
-    }
-
-    func request<T: Decodable>(endpoint: Endpoint) async throws -> T {
-        guard callIndex < responses.count else {
-            throw APIError.invalidURL
-        }
-        let data = responses[callIndex]
-        callIndex += 1
-        return try JSONDecoder().decode(T.self, from: data)
-    }
-}
-
 // MARK: - AlbumListViewModel Test Suite
 
 @MainActor
