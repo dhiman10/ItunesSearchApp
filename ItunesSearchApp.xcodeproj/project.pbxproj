@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ADAD3EC9DEA8EC870ABA0AF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7887408101259146CD209BB7 /* Foundation.framework */; };
+		EF1FAD69F3B006CC4E044167 /* AlbumListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DF16E7DD5458C74BFB249 /* AlbumListViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DBD186BFF49EF5ABBEE6314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ADC9E682EEB1CF60070E3E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ADC9E6F2EEB1CF60070E3E6;
+			remoteInfo = ItunesSearchApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6ADC9E702EEB1CF60070E3E6 /* ItunesSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7887408101259146CD209BB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ADED95AE231BD14FC9DE80CA /* ItunesSearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesSearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2DF16E7DD5458C74BFB249 /* AlbumListViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6ADC9E722EEB1CF60070E3E6 /* ItunesSearchApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = ItunesSearchApp;
 			sourceTree = "<group>";
 		};
@@ -26,14 +46,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FDA3C368CB314E4079DC382 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADAD3EC9DEA8EC870ABA0AF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03617FCA244800A3CD87E494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5E56E4C986C0B03B82B1F78 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6ADC9E672EEB1CF60070E3E6 = {
 			isa = PBXGroup;
 			children = (
 				6ADC9E722EEB1CF60070E3E6 /* ItunesSearchApp */,
 				6ADC9E712EEB1CF60070E3E6 /* Products */,
+				03617FCA244800A3CD87E494 /* Frameworks */,
+				C16B020A202373374C1B1FF2 /* ItunesSearchAppTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,8 +79,26 @@
 			isa = PBXGroup;
 			children = (
 				6ADC9E702EEB1CF60070E3E6 /* ItunesSearchApp.app */,
+				ADED95AE231BD14FC9DE80CA /* ItunesSearchAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C16B020A202373374C1B1FF2 /* ItunesSearchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA2DF16E7DD5458C74BFB249 /* AlbumListViewModelTests.swift */,
+			);
+			name = ItunesSearchAppTests;
+			path = ItunesSearchAppTests;
+			sourceTree = "<group>";
+		};
+		C5E56E4C986C0B03B82B1F78 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7887408101259146CD209BB7 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -64,11 +120,27 @@
 				6ADC9E722EEB1CF60070E3E6 /* ItunesSearchApp */,
 			);
 			name = ItunesSearchApp;
-			packageProductDependencies = (
-			);
 			productName = ItunesSearchApp;
 			productReference = 6ADC9E702EEB1CF60070E3E6 /* ItunesSearchApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C481E4CE4DC76EAA3064B0F5 /* ItunesSearchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E4F3BFF4A41C93116C4BE26 /* Build configuration list for PBXNativeTarget "ItunesSearchAppTests" */;
+			buildPhases = (
+				054440491F48563735B38855 /* Sources */,
+				8FDA3C368CB314E4079DC382 /* Frameworks */,
+				2A7CB6C4DA105C1AF97C4924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A72B0092E040B06BBA15A5DF /* PBXTargetDependency */,
+			);
+			name = ItunesSearchAppTests;
+			productName = ItunesSearchAppTests;
+			productReference = ADED95AE231BD14FC9DE80CA /* ItunesSearchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,11 +172,19 @@
 			projectRoot = "";
 			targets = (
 				6ADC9E6F2EEB1CF60070E3E6 /* ItunesSearchApp */,
+				C481E4CE4DC76EAA3064B0F5 /* ItunesSearchAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2A7CB6C4DA105C1AF97C4924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6ADC9E6E2EEB1CF60070E3E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +195,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		054440491F48563735B38855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1FAD69F3B006CC4E044167 /* AlbumListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6ADC9E6C2EEB1CF60070E3E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,6 +211,15 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A72B0092E040B06BBA15A5DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ItunesSearchApp;
+			target = 6ADC9E6F2EEB1CF60070E3E6 /* ItunesSearchApp */;
+			targetProxy = 6DBD186BFF49EF5ABBEE6314 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6ADC9E792EEB1CF80070E3E6 /* Debug */ = {
@@ -310,6 +407,41 @@
 			};
 			name = Release;
 		};
+		A7E238CC413E6F2BCF1F2D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN63ZGUMDK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dhiman.ContactApp.ItunesSearchAppTests;
+				PRODUCT_NAME = ItunesSearchAppTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesSearchApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ItunesSearchApp";
+			};
+			name = Debug;
+		};
+		AE6D21CB4010EABC1186916D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN63ZGUMDK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dhiman.ContactApp.ItunesSearchAppTests;
+				PRODUCT_NAME = ItunesSearchAppTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesSearchApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ItunesSearchApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +459,15 @@
 			buildConfigurations = (
 				6ADC9E7C2EEB1CF80070E3E6 /* Debug */,
 				6ADC9E7D2EEB1CF80070E3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E4F3BFF4A41C93116C4BE26 /* Build configuration list for PBXNativeTarget "ItunesSearchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6D21CB4010EABC1186916D /* Release */,
+				A7E238CC413E6F2BCF1F2D53 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
